@@ -1,5 +1,6 @@
 <!-- docs/_sidebar.md -->
 
+- [Home](/README.md)
 - **Guides**
 - [Getting Started](/guides/getting_started.md)
 - [Installation](/guides/installation.md)
