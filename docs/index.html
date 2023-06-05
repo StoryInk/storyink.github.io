@@ -1,0 +1,92 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no, viewport-fit=cover"
+    />
+    <meta name="description" content="" />
+    <title></title>
+
+    <!-- Themes (light + dark) -->
+    <link
+      rel="stylesheet"
+      media="(prefers-color-scheme: dark)"
+      href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple-dark.css"
+    />
+    <link
+      rel="stylesheet"
+      media="(prefers-color-scheme: light)"
+      href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css"
+    />
+  </head>
+  <body>
+    <div id="app"></div>
+    <script>
+      window.$docsify = {
+        auto2top: true,
+        coverpage: true,
+        homepage: "/docs/guides/getting_started.md",
+        loadNavbar: true,
+        loadSidebar: true,
+        loadFooter: true,
+        maxLevel: 4,
+        name: "StoryInk",
+        nameLink: "/docs/",
+        nativeEmoji: true,
+        notFoundPage: true,
+        onlyCover: true,
+        subMaxLevel: 2,
+        search: "auto",
+        progress: {
+          position: "top",
+          color: "var(--theme-color)",
+          height: "3px",
+        },
+        count: {
+          countable: true,
+          position: "top",
+          color: "var(--base-color)",
+          language: "english",
+          isExpected: true,
+        },
+        timeUpdater: {
+          text: "Updated at {docsify-updated}",
+          formatUpdated: "{MM}/{DD}/{YYYY}",
+          whereToPlace: "bottom",
+        },
+        tabs: {
+          persist: true,
+          sync: true,
+          theme: "classic",
+          tabComments: true,
+          tabHeadings: true,
+        },
+        customPageTitle: {
+          prefix: "StoryInk",
+          suffix: false,
+          seprator: "|",
+        },
+      };
+    </script>
+    <script src="//cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/docsify-themeable@0/dist/js/docsify-themeable.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/docsify@4/lib/plugins/zoom-image.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/docsify-tabs@1"></script>
+    <script src="//cdn.jsdelivr.net/npm/docsify-count@latest/dist/countable.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/@alertbox/docsify-footer/dist/docsify-footer.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/docsify-progress@latest/dist/progress.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/docsify-updated/src/time-updater.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/docsify-pagination-keyboard-helper@latest/dist/bundle.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/@sujaykumarh/docsify-plugin-title@1.x/dist/plugin.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
+    <script src="//polyfill.io/v3/polyfill.min.js?features=String.prototype.normalize"></script>
+  </body>
+</html>
