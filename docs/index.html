@@ -30,13 +30,13 @@
       window.$docsify = {
         auto2top: true,
         coverpage: true,
-        homepage: "/README.md",
+        homepage: "./README.md",
         loadNavbar: true,
         loadSidebar: true,
         loadFooter: true,
         maxLevel: 4,
         name: "StoryInk",
-        nameLink: "/",
+        nameLink: "./",
         nativeEmoji: true,
         notFoundPage: true,
         onlyCover: true,
@@ -44,33 +44,20 @@
         search: "auto",
         paths: "auto",
         progress: {
-          position: "top",
           color: "var(--theme-color)",
-          height: "3px",
         },
         count: {
-          countable: true,
-          position: "top",
           color: "var(--base-color)",
-          language: "english",
-          isExpected: true,
         },
         timeUpdater: {
-          text: "Updated at {docsify-updated}",
-          formatUpdated: "{MM}/{DD}/{YYYY}",
-          whereToPlace: "bottom",
-        },
-        tabs: {
-          persist: true,
-          sync: true,
-          theme: "classic",
-          tabComments: true,
-          tabHeadings: true,
+          text: "<small>Updated at **{docsify-updated}**</small>",
+          formatUpdated: "{MM}.{DD}.{YYYY}",
+          whereToPlace: "top",
         },
         customPageTitle: {
-          prefix: "StoryInk",
-          suffix: false,
-          seprator: "|",
+          prefix: false,
+          suffix: "StoryInk",
+          seprator: "•",
         },
         plugins: [
           function (hook, vm) {
@@ -94,6 +81,11 @@
           },
         ],
       };
+    </script>
+    <script>
+      if (typeof navigator.serviceWorker !== "undefined") {
+        navigator.serviceWorker.register("sw.js");
+      }
     </script>
     <script src="//cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/docsify-themeable@0/dist/js/docsify-themeable.min.js"></script>
